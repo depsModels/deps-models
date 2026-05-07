@@ -17,7 +17,29 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "DEPS Models | Design, Eficiência, Performance, Solução",
-  description: "Agência digital especializada em design moderno e performance para landing pages, e-commerces e sistemas web.",
+  description: "Software house focada em soluções digitais sob medida para negócios. Desenvolvemos sistemas para produtividade, controle e crescimento empresarial.",
+  openGraph: {
+    title: "DEPS Models | Software House Sob Medida",
+    description: "Software house focada em soluções digitais sob medida para negócios. Desenvolvemos sistemas para produtividade, controle e crescimento empresarial.",
+    url: "https://depsmodels.com",
+    siteName: "DEPS Models",
+    images: [
+      {
+        url: "/logos/logo-icon-3.png",
+        width: 800,
+        height: 600,
+        alt: "DEPS Models - Design, Eficiência, Performance, Solução",
+      },
+    ],
+    locale: "pt_BR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "DEPS Models | Software House",
+    description: "Software house focada em soluções digitais sob medida para negócios.",
+    images: ["/logos/logo-icon-3.png"],
+  },
 };
 
 export default function RootLayout({
