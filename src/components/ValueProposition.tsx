@@ -48,10 +48,10 @@ export default function ValueProposition() {
           {valueProps.map((prop) => (
             <div 
               key={prop.id} 
-              className="group relative bg-[#121212] rounded-[2rem] p-8 lg:p-10 border border-white/5 hover:border-[#2563eb]/30 transition-colors duration-500"
+              className="group relative bg-[#121212] rounded-4xl p-8 lg:p-10 border border-white/5 hover:border-[#2563eb]/30 transition-colors duration-500"
             >
               {/* Subtle hover gradient */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#2563eb]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-[2rem] pointer-events-none" />
+              <div className="absolute inset-0 bg-linear-to-br from-[#2563eb]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-4xl pointer-events-none" />
               
               <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500">
                 {prop.icon}

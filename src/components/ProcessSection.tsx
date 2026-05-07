@@ -55,7 +55,7 @@ export default function ProcessSection() {
         {/* Timeline Container */}
         <div className="relative">
           {/* Vertical Line for Desktop */}
-          <div className="hidden lg:block absolute left-1/2 top-4 bottom-4 w-[2px] bg-gradient-to-b from-transparent via-[#2563eb]/50 to-transparent -translate-x-1/2 shadow-[0_0_15px_rgba(37,99,235,0.3)]" />
+          <div className="hidden lg:block absolute left-1/2 top-4 bottom-4 w-[2px] bg-linear-to-b from-transparent via-[#2563eb]/50 to-transparent -translate-x-1/2 shadow-[0_0_15px_rgba(37,99,235,0.3)]" />
 
           <div className="flex flex-col gap-12 lg:gap-0 relative">
             {steps.map((step, index) => {
@@ -69,17 +69,17 @@ export default function ProcessSection() {
                   </div>
 
                   {/* Horizontal Connector Line (Desktop only) */}
-                  <div className={`hidden lg:block absolute top-1/2 -translate-y-1/2 h-[2px] w-16 bg-gradient-to-r ${isEven ? 'right-1/2 from-transparent to-[#2563eb]/50' : 'left-1/2 from-[#2563eb]/50 to-transparent'} z-10`} />
+                  <div className={`hidden lg:block absolute top-1/2 -translate-y-1/2 h-[2px] w-16 bg-linear-to-r ${isEven ? 'right-1/2 from-transparent to-[#2563eb]/50' : 'left-1/2 from-[#2563eb]/50 to-transparent'} z-10`} />
 
                   {/* Empty space for alternate sides */}
                   <div className="hidden lg:block lg:w-1/2" />
 
                   {/* Card Content */}
                   <div className={`w-full lg:w-1/2 ${isEven ? 'lg:pr-16' : 'lg:pl-16'} relative z-30`}>
-                    <div className="group bg-[#121212]/90 backdrop-blur-sm rounded-[2rem] border border-white/5 p-8 lg:p-10 hover:border-[#2563eb]/50 transition-all duration-500 hover:shadow-[0_0_40px_rgba(37,99,235,0.15)] relative overflow-hidden">
+                    <div className="group bg-[#121212]/90 backdrop-blur-sm rounded-4xl border border-white/5 p-8 lg:p-10 hover:border-[#2563eb]/50 transition-all duration-500 hover:shadow-[0_0_40px_rgba(37,99,235,0.15)] relative overflow-hidden">
                       
                       {/* Glow on hover */}
-                      <div className="absolute inset-0 bg-gradient-to-br from-[#2563eb]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                      <div className="absolute inset-0 bg-linear-to-br from-[#2563eb]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                       
                       <div className="relative z-10 flex flex-col md:flex-row gap-6 items-start md:items-center mb-6">
                         <div className="w-14 h-14 shrink-0 rounded-2xl bg-[#2563eb]/10 border border-[#2563eb]/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
