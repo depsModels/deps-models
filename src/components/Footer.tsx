@@ -65,9 +65,9 @@ export default function Footer() {
         </div>
         
         {/* Bottom Bar */}
-        <div className="flex flex-col xl:flex-row justify-between items-center xl:items-start pt-8 border-t border-white/5 gap-8 text-center xl:text-left">
+        <div className="flex flex-col lg:flex-row justify-between items-center pt-8 border-t border-white/5 gap-8 text-center lg:text-left">
           
-          <div className="flex flex-col xl:flex-row items-center xl:items-start gap-6 xl:gap-8">
+          <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8">
             {/* Logo on Bottom Bar */}
             <Link href="/" className="inline-block hover:opacity-80 transition-opacity shrink-0">
               <Image 
@@ -80,9 +80,9 @@ export default function Footer() {
               />
             </Link>
 
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3 items-center lg:items-start">
               {/* Legal Links inline */}
-              <div className="flex flex-wrap justify-center xl:justify-start items-center gap-x-3 gap-y-2 text-sm font-medium text-zinc-300">
+              <div className="flex flex-wrap justify-center lg:justify-start items-center gap-x-3 gap-y-2 text-sm font-medium text-zinc-300">
                 <Link href="/#home" className="hover:text-white transition-colors">Termos de Uso</Link>
                 <span className="text-zinc-600">|</span>
                 <Link href="/#home" className="hover:text-white transition-colors">Política de Privacidade</Link>
@@ -91,7 +91,7 @@ export default function Footer() {
               </div>
 
               {/* Copyright */}
-              <div className="flex flex-col gap-1">
+              <div className="flex flex-col gap-1 items-center lg:items-start">
                 <p className="text-zinc-500 text-xs font-light">
                   Copyright &copy; {currentYear}, DEPS Models. Todos os direitos reservados.
                 </p>
@@ -99,7 +99,7 @@ export default function Footer() {
             </div>
           </div>
           
-          <div className="flex flex-col sm:flex-row items-center gap-6 md:gap-8 md:pr-24 lg:pr-32">
+          <div className="flex flex-col sm:flex-row items-center gap-6 md:gap-8">
             <Link 
               href="/#home"
               className="text-sm font-medium text-zinc-400 hover:text-white flex items-center gap-2 transition-colors group"
