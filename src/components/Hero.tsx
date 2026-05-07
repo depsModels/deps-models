@@ -1,5 +1,6 @@
 import FloatingLines from './ui/FloatingLines';
 import TextType from './ui/TextType';
+import { ArrowRight, Sparkles } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -43,20 +44,24 @@ export default function Hero() {
         <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed">
           Nós desenvolvemos o sistema sob medida que organiza sua empresa e libera horas do seu dia. Automatizamos seus processos sem complicar.
         </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-5 mt-4">
           <a 
-            href="#services" 
-            className="group relative w-full sm:w-auto overflow-hidden bg-blue-600 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(37,99,235,0.5)] flex items-center justify-center"
+            href="#contact" 
+            className="group relative w-full sm:w-auto overflow-hidden bg-blue-600 text-white font-medium py-3.5 px-8 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(37,99,235,0.4)] flex items-center justify-center gap-2"
           >
-            <span className="relative z-10">Quero organizar minha empresa</span>
-            <div className="absolute inset-0 bg-linear-to-r from-blue-600 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <span className="relative z-10 flex items-center gap-2">
+              Falar com um Especialista
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </span>
+            <div className="absolute inset-0 bg-linear-to-r from-blue-500 to-blue-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </a>
           
           <a 
-            href="#contact" 
-            className="w-full sm:w-auto bg-white/5 border border-white/10 backdrop-blur-sm text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 hover:bg-white/10 hover:border-white/20 hover:scale-105 flex items-center justify-center"
+            href="#services" 
+            className="group w-full sm:w-auto bg-white/5 border border-white/10 backdrop-blur-md text-white font-medium py-3.5 px-8 rounded-full transition-all duration-300 hover:bg-white/10 hover:border-white/20 hover:scale-105 flex items-center justify-center gap-2"
           >
-            Falar no WhatsApp
+            <Sparkles className="w-4 h-4 text-blue-400" />
+            Ver Nossas Soluções
           </a>
         </div>
       </div>
