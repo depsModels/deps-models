@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-[#2563eb]/30 to-transparent" />
       <div className="absolute top-0 right-0 w-1/3 h-64 bg-[#2563eb] rounded-full blur-[150px] opacity-[0.03] pointer-events-none" />
 
-      <div className="container mx-auto px-6 md:px-12 relative z-10">
+      <div className="container mx-auto px-6 md:px-12 lg:px-24 xl:px-32 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-20 items-start text-center md:text-left">
           
           {/* Brand Col (Takes 5 columns) */}
