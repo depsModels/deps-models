@@ -40,10 +40,6 @@ export default function ProcessSection() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="mb-20 text-center max-w-3xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#2563eb]/20 bg-[#2563eb]/10 text-[#2563eb] text-sm font-medium mb-6">
-            <CheckCircle2 className="w-4 h-4" />
-            Zero Burocracia
-          </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight leading-[1.1]">
             Como nós tiramos o seu projeto do <span className="text-[#2563eb]">papel</span>
           </h2>

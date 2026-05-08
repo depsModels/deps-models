@@ -23,11 +23,6 @@ export default function CTA() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="flex flex-col items-center justify-center"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 mb-8 w-max">
-            <div className="w-2 h-2 rounded-full bg-[#2563eb] animate-pulse" />
-            <span className="text-xs font-mono text-zinc-300 uppercase tracking-widest">Inicie seu Projeto</span>
-          </div>
-
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 tracking-tight leading-[1.1]">
             Pronto para <br />
             <span className="text-[#2563eb] italic font-serif">organizar a casa?</span>

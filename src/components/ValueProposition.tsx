@@ -31,10 +31,6 @@ export default function ValueProposition() {
         
         {/* Header - The Pivot from Problem to Solution */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-red-500/20 bg-red-500/10 text-red-400 text-sm font-medium mb-6">
-            <XCircle className="w-4 h-4" />
-            O Fim das Planilhas Quebradas
-          </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-[1.1]">
             Pare de adaptar sua empresa a <span className="text-zinc-500 line-through decoration-red-500">softwares ruins</span>
           </h2>

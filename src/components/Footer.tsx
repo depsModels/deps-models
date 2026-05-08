@@ -46,7 +46,7 @@ export default function Footer() {
               <FooterLink href="/#portfolio">Projetos Recentes</FooterLink>
               <FooterLink href="/#process">Como Trabalhamos</FooterLink>
               <FooterLink href="/#faq">Dúvidas Frequentes</FooterLink>
-              <FooterLink href="/#contact">Iniciar Projeto</FooterLink>
+              <FooterLink href="/#contact">Contato</FooterLink>
             </ul>
           </div>
 
