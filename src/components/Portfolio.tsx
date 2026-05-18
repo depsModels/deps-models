@@ -182,7 +182,8 @@ function ProjectCard({
           </h3>
           <div className="mt-6 flex items-center gap-3 px-5 py-2.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs sm:text-sm font-medium tracking-wide">
             <span className="w-1.5 h-1.5 rounded-full bg-white animate-ping" />
-            Passe o mouse para ver o projeto
+            <span className="hidden sm:inline">Passe o mouse para ver o projeto</span>
+            <span className="sm:hidden">Toque para ver o projeto</span>
           </div>
         </div>
 

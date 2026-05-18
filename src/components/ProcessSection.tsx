@@ -316,7 +316,7 @@ function MobileStep({ step }: { step: typeof steps[0] }) {
       {/* Giant number */}
       <div
         className="absolute -top-7 -left-3 text-[7rem] font-black pointer-events-none"
-        style={{ color: 'rgba(255,255,255,0.01)', WebkitTextStroke: '1px rgba(37,99,235,0.12)' }}
+        style={{ color: 'rgba(255,255,255,0.03)', WebkitTextStroke: '1px rgba(37,99,235,0.25)' }}
       >
         {step.number}
       </div>
