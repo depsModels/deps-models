@@ -213,25 +213,25 @@ function ProjectCard({
           </div>
 
           {/* Info panel */}
-          <div className="w-full lg:w-[40%] flex flex-col gap-4 pointer-events-auto">
+          <div className="w-full lg:w-[40%] flex flex-col gap-4 pointer-events-auto bg-black/60 backdrop-blur-xl p-6 md:p-8 rounded-2xl border border-white/10 shadow-2xl">
             <p className="text-[#2563eb] text-xs font-bold tracking-widest uppercase">{project.category}</p>
             <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight leading-tight">{project.title}</h3>
-            <p className="text-zinc-400 text-sm md:text-base leading-relaxed hidden md:block">{project.description}</p>
+            <p className="text-zinc-300 text-sm md:text-base leading-relaxed hidden md:block">{project.description}</p>
 
             {/* Results */}
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-2 gap-3 mt-2">
               {project.results.map((r, idx) => (
-                <div key={idx} className="bg-white/5 border border-white/10 rounded-xl p-3">
+                <div key={idx} className="bg-white/10 border border-white/10 rounded-xl p-3 backdrop-blur-md">
                   <p className="text-xl font-bold text-white">{r.metric}</p>
-                  <p className="text-xs text-zinc-500 mt-0.5">{r.label}</p>
+                  <p className="text-xs text-zinc-400 mt-0.5">{r.label}</p>
                 </div>
               ))}
             </div>
 
             {/* Tags */}
-            <div className="flex flex-wrap gap-1.5 pt-1">
+            <div className="flex flex-wrap gap-1.5 pt-2">
               {project.technologies.map(tech => (
-                <span key={tech} className="px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-zinc-300">
+                <span key={tech} className="px-2.5 py-1 rounded-full bg-white/10 border border-white/10 text-xs font-medium text-zinc-200 backdrop-blur-md">
                   {tech}
                 </span>
               ))}
@@ -241,7 +241,7 @@ function ProjectCard({
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2 inline-flex items-center gap-2 px-6 py-3 bg-[#2563eb] text-white rounded-full font-semibold text-sm hover:bg-white hover:text-black transition-colors w-fit shadow-lg"
+              className="mt-4 inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#2563eb] text-white rounded-full font-semibold text-sm hover:bg-white hover:text-black transition-colors w-full sm:w-fit shadow-lg"
             >
               {project.linkText || 'Ver projeto'}
               <ArrowUpRight className="w-4 h-4" />
